@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'montserrat', sans-serif;
+
+    --cor-primaria: #191717;
+    --cor-secundaria: #FEFAE0;
+    --cor-terciaria: #FEFAE0;
+    --cor-hover: #B99470;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 2%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu {
+    padding: 2% 0% 0% 15%;
+    display:flex;
+    flex-direction: column;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    background-color: var(--cor-hover);
+    gap: 80px;
+}
+
+.cabecalho__menu__home {
+    padding: 16px;
+}
+
+.apresentacao {
+    padding: 5% 5% 10%;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.foto__rio {
+    width: 600px;
+    display:flex;
+    border: 3px dotted var(--cor-terciaria);
+}
+
+.foto__rio:hover {
+    padding: 2px;
+    
+}
+
+
+.foto__london {
+    width: 600px;
+    border: 3px dotted var(--cor-terciaria);
+    
+}
+
+.foto__london:hover {
+    padding: 2px;
+}
+
+.foto__newyork {
+    width: 600px;
+    border: 3px dotted var(--cor-terciaria);
+}
+
+.foto__newyork:hover {
+    padding: 2px;
+}
+
+
+.apresentacao__titulo {
+    display:flex;
+    flex-direction: column;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.apresentacao__titulo__subtitulo {
+    padding: 1%;
+    width: 145px;
+    border: 2px solid;
+    gap: 16px;
+    border-radius: 2px var(--cor-hover);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__titulo__subtitulo__texto {
+    width: 615px;
+    margin: 32px;
+    font-family: var(--fonte-secundaria);
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__links {
+    display:flex;
+    justify-content:center;
+    margin: 10%;
+}
+
+.apresentacao__links__link {
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+}
+
+
+.rodape {
+    padding: 2%;
+    background-color: var(--cor-hover);
+}
+
+.texto__de__rodape {
+    font-family: var(--fonte-secundaria);
+    display:flex;
+    justify-content: center;
+}
+
+@media (max-width:1025px) {
+
+    .apresentacao__titulo {
+        width: 100%;
+    }
+    
+    .apresentacao__titulo__subtitulo__texto {
+        width: auto;
+    }
+
+    .foto__rio {
+        width: 80%;
+    }
+
+    .foto__newyork {
+        width: 80%;
+    }
+
+    .foto__london {
+        width: 80%;
+    }
+}
